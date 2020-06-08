@@ -11,8 +11,8 @@ Log survey paper list
 
 * **Neural network-based**
   * LSTM model to predict the upcoming log events (workflow mining)
-    1. *[CCS17] DeepLog- Anomaly Detection and Diagnosis from System Logs through Deep Learning*
-    2. *[IJCAI19] LogAnomaly- Unsupervised Detection of Sequential and Quantitative Anomalies in Unstructured Logs*
+    1. *[**CCS17**] DeepLog- Anomaly Detection and Diagnosis from System Logs through Deep Learning*
+    2. *[**IJCAI19**] LogAnomaly- Unsupervised Detection of Sequential and Quantitative Anomalies in Unstructured Logs*
     
     
 
