@@ -42,4 +42,10 @@ Log survey paper list
   
   * ***Statistics-based Detection***
     1. [**ICDM09**] [Execution Anomaly Detection in Distributed Systems through Unstructured Log Analysis](https://netman.aiops.org/~peidan/ANM2018Fall/6.LogAnomalyDetection/ReadingList/Execution%20anomaly%20detection%20in%20distributed%20systems%20through%20unstructured%20log%20analysis.pdf)
+    1. [**KDD05**] [Dynamic Syslog Mining for Network Failure Monitoring](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.96.8083&rep=rep1&type=pdf)
+    1. [**ICDM08**] [Alert Detection in System Logs](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=4781208)
+   
+   * ***PCA***
+   1. [ICML10] [Detecting Large-Scale System Problems by Mining Console Logs](https://people.eecs.berkeley.edu/~jordan/papers/xu-etal-icml10.pdf)
+   
 
