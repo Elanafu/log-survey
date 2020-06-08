@@ -15,7 +15,7 @@ Log survey paper list
     1. [**IJCAI19**] [LogAnomaly: Unsupervised Detection of Sequential and Quantitative Anomalies in Unstructured Logs](https://www.ijcai.org/Proceedings/2019/0658.pdf)
    
   * ***LSTM classification model to classify anomalies***
-    * [**FSE19**] [Robust Log-Based Anomaly Detection on Unstable Log Data](https://dl.acm.org/doi/pdf/10.1145/3338906.3338931)
+    1. [**FSE19**] [Robust Log-Based Anomaly Detection on Unstable Log Data](https://dl.acm.org/doi/pdf/10.1145/3338906.3338931)
    
   
 * **Traditional machine learning-based**
@@ -33,6 +33,6 @@ Log survey paper list
 
 ### Unsupervised Approaches
 
-* ***Clustering***
-  1. [**ICSE16**] [Log Clustering based Problem Identification for Online Service Systems](https://dl.acm.org/doi/pdf/10.1145/2889160.2889232)
+  * ***Clustering***
+    1. [**ICSE16**] [Log Clustering based Problem Identification for Online Service Systems](https://dl.acm.org/doi/pdf/10.1145/2889160.2889232)
 
