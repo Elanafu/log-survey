@@ -50,7 +50,7 @@ Logs are a type of valuable data generated from many sources such as software, s
     + Journals: [TKDE](https://dblp.uni-trier.de/db/journals/tkde/index) | [TBD](https://dblp.uni-trier.de/db/journals/tbd/index.html)
 + **Industrial conferences**
     + [SREcon](https://www.usenix.org/conferences/byname/925) | [GOPS](https://www.bagevent.com/event/GOPS2019-shenzhen?bag_track=bagevent)
-  
+
 ## Competitions
 
 XXXX 
@@ -77,7 +77,10 @@ Loghub
 
 ## Logging Statements & Logging Practices
 
-### Category 1
+### What to log
+
+### Where to log
+
 ### Category 2
 
 ## Log Parsing
