@@ -77,8 +77,35 @@ Loghub
 
 ## Logging Statements & Logging Practices
 
-### Category 1
-### Category 2
+### Log Compression
+
+#### Delta encoding
+- Lossless compression for large scale cluster logs
+- MLC: An Efficient Multi-level Log Compression Method for Cloud Backup Systems
+- Fast and efficient log file compression
+- Felfcnca: Fast & efficient log file com- pression using non linear cellular automata classifier.
+#### Bucketing
+- Adaptive log compression for massive log data
+- Mlc: An efficient multi-level log compression method for cloud backup systems.
+  
+#### Text replacement
+- Evaluating text preprocessing to im- prove compression on maillogs.
+- Using semantic knowledge to improve compression on log files. [Thesis]
+- An Industrial Case Study of Customizing Operational Profiles Using Log Compression
+- Rough Logs: A Data Reduction Approach for Log Files
+  
+#### Log transposition
+- Sub-atomic field processing for improved web log compression
+- Cowic: A column-wise independent compression for log stream analysis
+logzip
+- Lightweight Packing of Log Files for Improved Compression in Mobile Tactical Networks
+- An Industrial Case Study of Customizing Operational Profiles Using Log Compression
+- Comprehensive Log Compression with Frequent Patterns
+
+#### Others
+- A Study of the Performance of General Compressors on Log Files
+- Immutable Log Storage as a Service [with bloch chain]
+- Anonymization of System Logs for Privacy and Storage Benefits
 
 ## Log Parsing
 
@@ -139,6 +166,12 @@ Loghub
 
 ## Debugging and Diagnosis
 
+### Empirical Study
+Understanding Customer Problem Troubleshooting from Storage System Logs
+
+[ICSE'19] An Empirical Study On Leveraging Logs For Debugging Production Failures
+
+Insights into the Diagnosis of System Failures from Cluster Message Logs
 
 ## Log File Storage
 
