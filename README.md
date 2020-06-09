@@ -3,6 +3,10 @@ Log survey paper list
 
 
 
+[TOC]
+
+
+
 ## Contents
   - [Conferences and Journals](#conferences-and-journals)
   - [Competitions](#competitions)
