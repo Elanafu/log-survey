@@ -81,6 +81,8 @@ Loghub
 
 ## Logging Statements & Logging Practices
 
+- [MSR'19] Tracing Back Log Data to its Log Statement: From Research to Practice
+
 ### Log Compression
 
 #### Delta encoding
