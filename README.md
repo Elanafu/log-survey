@@ -79,9 +79,28 @@ Loghub
 
 ## Papers
 
-## Logging Statements & Logging Practices
+### Logging Statements & Logging Practices
 
-- [MSR'19] Tracing Back Log Data to its Log Statement: From Research to Practice
+#### By static analysis
+
+- [MSR'19] [Tracing Back Log Data to its Log Statement: From Research to Practice](https://pure.tudelft.nl/portal/files/52060635/paper.pdf)
+- [ICSE19Li] [DLFinder: Characterizing and Detecting Duplicate Logging Code Smells](https://users.encs.concordia.ca/~shang/pubs/icse2019_zhenhao.pdf)
+- [SOSP17Zhao] [Log20: Fully Automated Optimal Placement of Log Printing Statements under Specified Overhead Threshold](http://log20.dsrg.utoronto.ca/log20_sosp17_paper.pdf)
+- [ICSE17chen] [Characterizing and Detecting Anti-patterns in the Logging Code](https://dl.acm.org/doi/pdf/10.1109/ICSE.2017.15)
+- [OSDI12Yuan] [Be Conservative: Enhancing Failure Diagnosis with Proactive Logging](https://www.eecg.utoronto.ca/~yuan/papers/osdi12-errlog.pdf)
+- [ICSE12Yuan] [Characterizing logging practices in open-source software](http://petertsehsun.github.io/soen691/current/papers/log_icse12.pdf)
+- [ASPLOS11Yuan] [Improving Software Diagnosability via Log Enhancement](http://opera.ucsd.edu/paper/asplos11-logenhancer.pdf)
+
+#### By statistical methods
+
+- [TSE19liu] [Which Variables Should I Log?](https://xin-xia.github.io/publication/tse197.pdf)
+- [ASE18He] [Characterizing the Natural Language Descriptions in Software Logging Statements](https://pinjiahe.github.io/papers/ASE18.pdf)
+- [ATC15Ding] [Log2 : A Cost-Aware Logging Mechanism for Performance Diagnosis](https://www.usenix.org/system/files/conference/atc15/atc15-paper-ding.pdf)
+
+#### Survey
+
+- [ICSE15Pecchia] [Industry practices and event logging: assessment of a critical software development process](https://dl.acm.org/doi/10.5555/2819009.2819035)
+- [ICSE12Shang] [Bridging the Divide between Software Developers and Operators using Logs](https://users.encs.concordia.ca/~shang/pubs/icse2012_Shang.pdf)
 
 ### Log Compression
 
@@ -110,7 +129,7 @@ logzip
 
 #### Others
 - A Study of the Performance of General Compressors on Log Files
-- Immutable Log Storage as a Service [with bloch chain]
+- Immutable Log Storage as a Service [with blockchain]
 - Anonymization of System Logs for Privacy and Storage Benefits
 
 ## Log Parsing
