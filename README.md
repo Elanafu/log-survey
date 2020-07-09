@@ -102,6 +102,15 @@ Loghub
 - [ICSE15Pecchia] [Industry practices and event logging: assessment of a critical software development process](https://dl.acm.org/doi/10.5555/2819009.2819035)
 - [ICSE12Shang] [Bridging the Divide between Software Developers and Operators using Logs](https://users.encs.concordia.ca/~shang/pubs/icse2012_Shang.pdf)
 
+#### Pending Classification
+
+- [OSDI18Lockerman] [The FuzzyLog: A Partially Ordered Shared Log](https://www.usenix.org/conference/osdi18/presentation/lockerman)
+- [ICSME19Zhi] [An Exploratory Study of Logging Configuration Practice in Java](http://taoxie.cs.illinois.edu/publications/icsme19-log.pdf)
+- [SOSP13] [Tango: distributed data structures over a shared log](https://dl.acm.org/doi/10.1145/2517349.2522732)
+- [ICSDCS18] [SLoG: Large-Scale Logging Middleware for HPC and Big Data Convergence](https://ieeexplore.ieee.org/document/8416419)
+- [ICDCS10] [Visual, Log-Based Causal Tracing for Performance Debugging of MapReduce Systems](https://ieeexplore.ieee.org/document/5541622)
+- [ICSE20] [Studying the Use of Java Logging Utilities in the Wild](https://www.eecs.yorku.ca/~chenfsd/resources/icse2020_chen.pdf)
+
 ### Log Compression
 
 #### Delta encoding
@@ -138,6 +147,14 @@ logzip
 ### Category 2
 
 ## Log Mining
+
+### *Pending*
+
+- [SOSP09Xu] [Detecting large-scale system problems by mining console logs](https://dl.acm.org/doi/10.1145/1629575.1629587)
+- [ATC11] [In-situ MapReduce for Log Processing](https://www.usenix.org/conference/usenixatc11/situ-mapreduce-log-processing)
+- [ATC10] [Mining Invariants from Console Logs for System Problem Detection](https://www.usenix.org/conference/usenix-atc-10/mining-invariants-console-logs-system-problem-detection)
+- [ICDCS18] [LogLens: A Real-Time Log Analysis System](https://ieeexplore.ieee.org/document/8416368)
+- 
 
 ### Log Anomaly Detection
 
@@ -190,6 +207,11 @@ logzip
 
 
 ## Debugging and Diagnosis
+
+#### *Pending*
+
+- [ATC18Ma] Kernel-Supported Cost-Effective Audit Logging for Causality Tracking
+- [ATC18Luo] Troubleshooting Transiently-Recurring Errors in Production Systems with Blame-Proportional Logging
 
 ### Empirical Study
 Understanding Customer Problem Troubleshooting from Storage System Logs
