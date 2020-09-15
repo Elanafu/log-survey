@@ -12,7 +12,7 @@ Log survey paper list
   - [Competitions](#competitions)
   - [Datasets](#datasets)
   - [Research Groups](#research-groups)
-  - [Logging Statements & Logging Practices](#logging-statements--logging-practices)
+  - [Logging](#logging)
     - [Category 1](#category-1)
     - [Category 2](#category-2)
   - [Log Parsing](#log-parsing)
@@ -79,7 +79,7 @@ Loghub
 
 ## Papers
 
-### Logging Statements & Logging Practices
+### Logging
 
 #### By static analysis
 
@@ -118,6 +118,7 @@ Loghub
 - MLC: An Efficient Multi-level Log Compression Method for Cloud Backup Systems
 - Fast and efficient log file compression
 - Felfcnca: Fast & efficient log file com- pression using non linear cellular automata classifier.
+
 #### Bucketing
 - Adaptive log compression for massive log data
 - Mlc: An efficient multi-level log compression method for cloud backup systems.
@@ -174,7 +175,7 @@ logzip
 - [ICDCS18] [LogLens: A Real-Time Log Analysis System](https://ieeexplore.ieee.org/document/8416368)
 - 
 
-### Log Anomaly Detection
+### Anomaly Detection
 
 #### Supervised Approaches
 
@@ -216,29 +217,15 @@ logzip
   - [ICML10] [Detecting Large-Scale System Problems by Mining Console Logs](https://people.eecs.berkeley.edu/~jordan/papers/xu-etal-icml10.pdf)
 
 
-### Problems Identification
+### Failure Prediction
 
-### Root cause identification
+### Failure Diagnosis
 - XX 
   - [COMPSAC19] [Learning-based Anomaly Cause Tracing with Synthetic Analysis of Logs from Multiple Cloud Service Components](https://ieeecompsac.computer.org/2019/seta/)
 
+### Others
 
 
-## Debugging and Diagnosis
-
-#### *Pending*
-
-- [ATC18Ma] Kernel-Supported Cost-Effective Audit Logging for Causality Tracking
-- [ATC18Luo] Troubleshooting Transiently-Recurring Errors in Production Systems with Blame-Proportional Logging
-
-### Empirical Study
-Understanding Customer Problem Troubleshooting from Storage System Logs
-
-[ICSE'19] An Empirical Study On Leveraging Logs For Debugging Production Failures
-
-Insights into the Diagnosis of System Failures from Cluster Message Logs
-
-## Log File Storage
 
 
 ## Credits
