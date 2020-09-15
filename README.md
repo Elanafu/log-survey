@@ -237,8 +237,17 @@ logzip
 - PCA
   - [ICML10] [Detecting Large-Scale System Problems by Mining Console Logs](https://people.eecs.berkeley.edu/~jordan/papers/xu-etal-icml10.pdf)
 
-
 ### Failure Prediction
+
+- [MACS18] [PreFix: Switch failure prediction in datacenter networks](https://doi.org/10.1145/3179405)
+- [HPDC18] [Desh: deep learning for system health prediction of lead times to failure in HPC](https://doi.org/10.1145/3208040.3208051)
+- [KDD03] [Critical event prediction for proactive management in large-scale computer clusters](https://doi.org/10.1145/956750.956799)
+- [IPDPS20] [Aarohi: Making real-time node failure prediction feasible](https://doi.org/10.1109/IPDPS47924.2020.00115)
+- [CLUSTER17] [Data Mining-Based Analysis of HPC Center Operations](https://doi.org/10.1109/CLUSTER.2017.23)
+- [CLUSTER14] [Exploring void search for fault detection on extreme scale systems](https://doi.org/10.1109/CLUSTER.2014.6968757)
+- [WWW19] [Outage Prediction and Diagnosis for Cloud Service Systems](http://dl.acm.org/citation.cfm?doid=3308558.3313501)
+- [FSE18] [Predicting Node failure in cloud service systems](http://dl.acm.org/citation.cfm?doid=3236024.3236060)
+- [FSE19] [Latent error prediction and fault localization for microservice applications by learning from system trace logs](http://dl.acm.org/citation.cfm?doid=3338906.3338961)
 
 ### Failure Diagnosis
 - XX 
@@ -246,7 +255,12 @@ logzip
 
 ### Others
 
-
+- [DSN14] [Mining Historical Issue Repositories to Heal Large-Scale Online Service Systems](https://doi.org/10.1109/DSN.2014.39)
+- [ASE98] [Testing using log file analysis: Tools, methods, and issues](https://doi.org/10.1109/ASE.1998.732614)
+- [ASE18] [An automated approach to estimating code coverage measures via execution logs](https://doi.org/10.1145/3238147.3238214)
+- [ASE19] [An experience report of generating load tests using log-recovered workloads at varying granularities of user behaviour](https://doi.org/10.1109/ASE.2019.00068)
+- [ASE15] [Have we seen enough traces? (T)](https://doi.org/10.1109/ASE.2015.62)
+- [ICSE08] [An approach to detecting duplicate bug reports using natural language and execution information](https://doi.org/10.1145/1368088.1368151)
 
 
 ## Credits
