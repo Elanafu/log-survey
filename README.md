@@ -25,6 +25,7 @@ Table of Contents
   - [Log Parsing](#log-parsing)
     - [Offline](#offline)
     - [Online](#online)
+    - [Benchmark and Tools](#benchmark-and-tools)
   - [Log Mining](#log-mining)
     - [*Pending*](#pending)
     - [Anomaly Detection](#anomaly-detection)
@@ -172,6 +173,7 @@ logzip
 - [MSR'10] [Abstracting Log Lines to Log Event Types for Mining Software System Logs](http://www.se.rit.edu/~mei/publications/pdfs/Abstracting-Log-Lines-to-Log-Event-Types-for-Mining-Software-System-Logs.pdf)
 - [CIKM'11] [LogSig: Generating System Events from Raw Textual Logs](https://users.cs.fiu.edu/~taoli/pub/liang-cikm2011.pdf) 
 - [KDD'09] [Clustering Event Logs Using Iterative Partitioning](https://web.cs.dal.ca/~makanju/publications/paper/kdd09.pdf)
+- [TKDE'12] [A Lightweight Algorithm for Message Type Extraction in System Application Logs](https://ieeexplore.ieee.org/document/5936060)
 - [CNSM'15] [LogCluster - A Data Clustering and Pattern Mining Algorithm for Event Logs](http://dl.ifip.org/db/conf/cnsm/cnsm2015/1570161213.pdf)
 - [CIKM'16] [LogMine: Fast Pattern Recognition for Log Analytics](http://www.cs.unm.edu/~mueen/Papers/LogMine.pdf)
 - [TDSC'18] [Towards Automated Log Parsing for Large-Scale Log Data Analysis](https://pinjiahe.github.io/papers/TDSC17.pdf)
@@ -179,11 +181,15 @@ logzip
 
 ### Online
 - [SCC'13] [Incremental Mining of System Log Format](http://ieeexplore.ieee.org/document/6649746/)
-- [CNSM'15] [Length Matters: Clustering System Log Messages using Length of Words](https://arxiv.org/pdf/1611.03213.pdf)
-- [ICDM'16] [Spell: Streaming Parsing of System Event Logs](https://www.cs.utah.edu/~lifeifei/papers/spell.pdf)
+- [arXiv'15] [Length Matters: Clustering System Log Messages using Length of Words](https://arxiv.org/pdf/1611.03213.pdf)
+- [TKDE'19] [Spell: Online Streaming Parsing of Large Unstructured System Logs](https://ieeexplore.ieee.org/document/8489912)
 - [ICWS'17] [Drain: An Online Log Parsing Approach with Fixed Depth Tree](https://jiemingzhu.github.io/pub/pjhe_icws2017.pdf)
 - [arXiv'18] [A Directed Acyclic Graph Approach to Online Log Parsing](https://arxiv.org/abs/1806.04356)
 - [TSE'20] [Logram: Efficient Log Parsing Using n-Gram Dictionaries](https://arxiv.org/abs/2001.03038)
+
+### Benchmark and Tools
+- [ICSE-SEIP'19] [Tools and benchmarks for automated log parsing](https://arxiv.org/abs/1811.03509)
+
 
 
 ## Log Mining
