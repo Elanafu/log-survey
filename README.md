@@ -25,7 +25,6 @@ Table of Contents
     - [Online](#online)
     - [Benchmarks and Tools](#benchmarks-and-tools)
   - [Log Mining](#log-mining)
-    - [*Pending*](#pending)
     - [Anomaly Detection](#anomaly-detection)
     - [Failure Prediction](#failure-prediction)
     - [Failure Diagnosis](#failure-diagnosis)
@@ -188,13 +187,6 @@ Loghub
 
 ## Log Mining
 
-### *Pending*
-
-- [SOSP09Xu] [Detecting large-scale system problems by mining console logs](https://dl.acm.org/doi/10.1145/1629575.1629587)
-- [ATC11] [In-situ MapReduce for Log Processing](https://www.usenix.org/conference/usenixatc11/situ-mapreduce-log-processing)
-- [ATC10] [Mining Invariants from Console Logs for System Problem Detection](https://www.usenix.org/conference/usenix-atc-10/mining-invariants-console-logs-system-problem-detection)
-- [ICDCS18] [LogLens: A Real-Time Log Analysis System](https://ieeexplore.ieee.org/document/8416368)
-- 
 
 ### Anomaly Detection
 
@@ -247,66 +239,65 @@ Loghub
 
 ### Failure Diagnosis
 #### Execution Replay Methods
- - [ICSE 2019] [An empirical study on leveraging logs for debugging production failures]()
- - [ASPLOS 2016] [SherLog: error diagnosis by connecting clues from run-time logs]()
+ - [ICSE 2019] [An empirical study on leveraging logs for debugging production failures](https://dl.acm.org/doi/10.1109/ICSE-Companion.2019.00055)
+ - [ASPLOS 2016] [SherLog: error diagnosis by connecting clues from run-time logs](http://opera.ucsd.edu/paper/asplos10-sherlog.pdf)
 
 ####  Model-based Methods
-- [ISSTA 2009] [AVA:automated interpretation of dynamically detected anomalies]()
+- [ISSTA 2009] [AVA:automated interpretation of dynamically detected anomalies](https://dl.acm.org/doi/pdf/10.1145/1572272.1572300)
 
-- [IC2E 2016] [Logan: Problem diagnosis in the cloud using log-based reference models]()
+- [IC2E 2016] [LOGAN: Problem diagnosis in the cloud using log-based reference models](https://ieeexplore.ieee.org/document/7484164)
 
-- [ICWS 2017] [An approach for anomaly diagnosis based on hybrid graph model with logs for distributed services]()
+- [ICWS 2017] [An approach for anomaly diagnosis based on hybrid graph model with logs for distributed services](https://ieeexplore.ieee.org/document/8029741)
 
-- [Cloud 2017] [Logsed: Anomaly diagnosis through mining time-weighted control flow graph in logs]() 
+- [Cloud 2017] [Logsed: Anomaly diagnosis through mining time-weighted control flow graph in logs](https://ieeexplore.ieee.org/document/8030620) 
 
-- [FSE 2018] [Cloudraid: hunting concurrency bugs in the cloud via log-mining]()
+- [FSE 2018] [CloudRaid: hunting concurrency bugs in the cloud via log-mining](https://dl.acm.org/doi/abs/10.1145/3236024.3236071)
 
 
 #### Statistics-based Methods
-- [TPDS 2013] [Toward fine-grained, unsupervised, scalable performance diagnosis for production cloud computing systems]()
+- [TPDS 2013] [Toward fine-grained, unsupervised, scalable performance diagnosis for production cloud computing systems](https://ieeexplore.ieee.org/document/6410318)
 
-- [CLUSTER 2014] [Digging deeper into cluster system logs for failure prediction and root cause diagnosis]()
+- [CLUSTER 2014] [Digging deeper into cluster system logs for failure prediction and root cause diagnosis](https://ieeexplore.ieee.org/document/6968768)
 
 
-- [ASPLOS 2014] [Comprehending performance from real-world execution traces: A device-driver case]()
+- [ASPLOS 2014] [Comprehending performance from real-world execution traces: A device-driver case](https://dl.acm.org/doi/10.1145/2644865.2541968)
 
-- [ICWS 2017] [Log-based abnormal task detection and root cause analysis for spark]()
+- [ICWS 2017] [Log-based abnormal task detection and root cause analysis for spark](https://ieeexplore.ieee.org/document/8029786)
 
-- [EDCC 2015] [Insights into the diagnosis of system failures from cluster message logs]()
+- [EDCC 2015] [Insights into the diagnosis of system failures from cluster message logs](https://ieeexplore.ieee.org/abstract/document/7371970)
 
-- [HPC 2010] [Diagnosing the root-causes of failures from cluster log files]()
+- [HPC 2010] [Diagnosing the root-causes of failures from cluster log files](https://ieeexplore.ieee.org/document/5713159)
 
 - [ASE 2019] [SCMiner: localizing system-level concurrency faults from large system call traces](https://ieeexplore.ieee.org/document/8952396)
 
 
 #### Retrieval-based Methods
 
-- [NSDI 2012] [ Structured comparative analysis of systems logs to diag- nose performance problems]()
+- [NSDI 2012] [Structured comparative analysis of systems logs to diag- nose performance problems](https://www.usenix.org/system/files/conference/nsdi12/nsdi12-final61.pdf)
 
-- [ICSE 2013] [Assisting developers of big data analytics applications when deploying on hadoop clouds]()
+- [ICSE 2013] [Assisting developers of big data analytics applications when deploying on hadoop clouds](https://ieeexplore.ieee.org/document/6606586)
 
-- [TPDS 2016] [Failure diagnosis for distributed systems using targeted fault injection]()
+- [TPDS 2016] [Failure diagnosis for distributed systems using targeted fault injection](https://ieeexplore.ieee.org/document/7484300)
 
-- [ICSE 2017] [What causes my test alarm? Automatic cause analysis for test alarms in system and integration testing]()
+- [ICSE 2017] [What causes my test alarm? Automatic cause analysis for test alarms in system and integration testing](https://dl.acm.org/doi/10.1109/ICSE.2017.71)
 
-- [GLOBECOM 2018] [Root-Cause Diagnosis Using Logs Generated by User Actions]()
+- [GLOBECOM 2018] [Root-Cause Diagnosis Using Logs Generated by User Actions](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8647957)
 
-- [ICSE 2019] [Mining Historical Issue Repositories to Heal Large-Scale Online Service Systems]()
+- [ICSE 2019] [Mining Historical Issue Repositories to Heal Large-Scale Online Service Systems](https://ieeexplore.ieee.org/document/6903589)
 
-- [CLOUD 2019] [An Approach to Cloud Execution Failure Diagnosis Based on Exception Logs in OpenStack ]()
+- [CLOUD 2019] [An Approach to Cloud Execution Failure Diagnosis Based on Exception Logs in OpenStack](https://ieeexplore.ieee.org/abstract/document/8814553)
 
 
 #### Empirical Studies
-- [FAST 2009] [Understanding customer problem troubleshooting from storage system logs]()
+- [FAST 2009] [Understanding customer problem troubleshooting from storage system logs](https://www.usenix.org/legacy/events/fast09/tech/full_papers/jiang/jiang.pdf)
 
-- [DSN 2013] [Reading between the lines of failure logs: Understanding how HPC systems fail]()
+- [DSN 2013] [Reading between the lines of failure logs: Understanding how HPC systems fail](https://ieeexplore.ieee.org/document/6575356)
 
-- [DSN 2014] [What logs should you look at when an application fails? insights from an industrial case study]()
+- [DSN 2014] [What logs should you look at when an application fails? insights from an industrial case study](https://ieeexplore.ieee.org/document/6903626)
 
-- [TSE 2018] [Fault analysis and debugging of microservice systems: Industrial survey, benchmark system, and empirical study]()
+- [TSE 2018] [Fault analysis and debugging of microservice systems: Industrial survey, benchmark system, and empirical study](https://ieeexplore.ieee.org/document/8580420)
 
-- [FSE 2019] [How bad can a bug get? an empirical analysis of software failures in the OpenStack cloud computing platform]()
-
+- [FSE 2019] [How bad can a bug get? an empirical analysis of software failures in the OpenStack cloud computing platform](https://dl.acm.org/doi/10.1145/3338906.3338916)
 
 
 ### Others
@@ -320,11 +311,11 @@ Loghub
 
 
 ## Credits
-- Inspired by [Awesome Machine Learning](https://github.com/josephmisiti/awesome-machine-learning).
+Inspired by [Awesome Machine Learning](https://github.com/josephmisiti/awesome-machine-learning).
 
 
 ## Contributions
-how to contribute to this repo
+To be announced.
 
 ## License
-the repo will be under the MIT license.
+This repo is under the MIT license.
