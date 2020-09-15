@@ -95,7 +95,7 @@ Loghub
 - [OSDI 2012] [Be Conservative: Enhancing Failure Diagnosis with Proactive Logging](https://www.eecg.utoronto.ca/~yuan/papers/osdi12-errlog.pdf)
 - [TSE 2013] [Event Logs for the Analysis of Software Failures: A Rule-Based Approach](http://ieeexplore.ieee.org/document/6320555/)
 - [ICSE 2015] [Learning to Log: Helping Developers Make Informed Logging Decisions](http://ieeexplore.ieee.org/document/7194593/)
-- [ICSE 2015] [Where do developers log? an empirical study on logging practices in industry]http://dl.acm.org/citation.cfm?doid=2591062.2591175()
+- [ICSE 2015] [Where do developers log? an empirical study on logging practices in industry](http://dl.acm.org/citation.cfm?doid=2591062.2591175)
 - [ATC 2015] [Log2 : A Cost-Aware Logging Mechanism for Performance Diagnosis](https://www.usenix.org/system/files/conference/atc15/atc15-paper-ding.pdf)
 - [SOSP 2017] [Log20: Fully Automated Optimal Placement of Log Printing Statements under Specified Overhead Threshold](http://log20.dsrg.utoronto.ca/log20_sosp17_paper.pdf)
 - [HotOS 2017] [The Game of Twenty Questions: Do You Know Where to Log?](https://dl.acm.org/doi/10.1145/3102980.3103001)
