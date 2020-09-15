@@ -17,10 +17,9 @@ Table of Contents
     - [Empirical Study](#empirical-study)
     - [Pending Classification](#pending-classification)
   - [Log Compression](#log-compression)
-    - [Delta encoding](#delta-encoding)
-    - [Bucketing](#bucketing)
-    - [Text replacement](#text-replacement)
-    - [Log transposition](#log-transposition)
+    - [Bucket](#bucket)
+    - [Dictionary](#dictionary)
+    - [Statistics](#statistics)
     - [Others](#others)
   - [Log Parsing](#log-parsing)
     - [Offline](#offline)
@@ -122,34 +121,28 @@ Loghub
 
 ## Log Compression
 
-### Delta encoding
-- Lossless compression for large scale cluster logs
-- MLC: An Efficient Multi-level Log Compression Method for Cloud Backup Systems
-- Fast and efficient log file compression
-- Felfcnca: Fast & efficient log file com- pression using non linear cellular automata classifier.
+### Bucket
+- [IPDPS 2006] [Lossless compression for large scale cluster logs](https://ieeexplore.ieee.org/document/1639692)
+- [ADBIS 2007] [Fast and efficient log file compression](http://www.adbis.org/docs/lp/6.pdf)
+- [ICSE 2008] [An Industrial Case Study of Customizing Operational Profiles Using Log Compression](https://dl.acm.org/doi/abs/10.1145/1368088.1379445)
+- [SIGMOD 2013] [Adaptive log compression for massive log data](https://dl.acm.org/doi/10.1145/2463676.2465341)
+- [IEEE Trustcom/BigDataSE/ISPA 2016] [MLC: An Efficient Multi-level Log Compression Method for Cloud Backup Systems](https://ieeexplore.ieee.org/document/7847098/)
+  
+### Dictionary
+- [TCSET 2008] [Sub-atomic field processing for improved web log compression](https://ieeexplore.ieee.org/document/5423436)
+- [CCGRID 2015] [Cowic: A column-wise independent compression for log stream analysis](https://ieeexplore.ieee.org/document/7152468)
+- [IMCC 2014] [Lightweight Packing of Log Files for Improved Compression in Mobile Tactical Networks](https://ieeexplore.ieee.org/document/6956758)
+- [DCC 2004] [High density compression of log files](https://ieeexplore.ieee.org/document/1281533)
 
-### Bucketing
-- Adaptive log compression for massive log data
-- Mlc: An efficient multi-level log compression method for cloud backup systems.
-  
-### Text replacement
-- Evaluating text preprocessing to im- prove compression on maillogs.
-- Using semantic knowledge to improve compression on log files. [Thesis]
-- An Industrial Case Study of Customizing Operational Profiles Using Log Compression
-- Rough Logs: A Data Reduction Approach for Log Files
-  
-### Log transposition
-- Sub-atomic field processing for improved web log compression
-- Cowic: A column-wise independent compression for log stream analysis
-logzip
-- Lightweight Packing of Log Files for Improved Compression in Mobile Tactical Networks
-- An Industrial Case Study of Customizing Operational Profiles Using Log Compression
-- Comprehensive Log Compression with Frequent Patterns
+### Statistics
+- [DaWaK 2003] [Comprehensive Log Compression with Frequent Patterns](https://link.springer.com/chapter/10.1007/978-3-540-45228-7_36)
+- [ICEIS 2019] [Rough Logs: A Data Reduction Approach for Log Files](https://www.scitepress.org/Papers/2019/77351/pdf/index.html)
+- [ASE 2019] [Logzip: extracting hidden structures via iterative clustering for log compression](https://arxiv.org/abs/1910.00409)
 
 ### Others
-- A Study of the Performance of General Compressors on Log Files
-- Immutable Log Storage as a Service [with blockchain]
-- Anonymization of System Logs for Privacy and Storage Benefits
+- [EMSE 2019] [A Study of the Performance of General Compressors on Log Files](https://users.encs.concordia.ca/~shang/pubs/Kundi_EMSE2020.pdf)
+- [Ph.D. Dissertation 2008] [Using semantic knowledge to improve compression on log files](https://homes.cs.ru.ac.za/B.Irwin/theses/Otten%202008%20%20Msc%20Using%20semantic%20knowledge%20to%20improve%20compression%20on%20log%20files.pdf)
+
 
 ## Log Parsing
 
