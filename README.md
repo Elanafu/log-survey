@@ -90,35 +90,47 @@ Loghub
 
 ## Logging
 
-### By static analysis
+### Where to log
 
-- [MSR 2019] [Tracing Back Log Data to its Log Statement: From Research to Practice](https://pure.tudelft.nl/portal/files/52060635/paper.pdf)
-- [ICSE 2019] [DLFinder: Characterizing and Detecting Duplicate Logging Code Smells](https://users.encs.concordia.ca/~shang/pubs/icse2019_zhenhao.pdf)
-- [SOSP 2017] [Log20: Fully Automated Optimal Placement of Log Printing Statements under Specified Overhead Threshold](http://log20.dsrg.utoronto.ca/log20_sosp17_paper.pdf)
-- [ICSE 2017] [Characterizing and Detecting Anti-patterns in the Logging Code](https://dl.acm.org/doi/pdf/10.1109/ICSE.2017.15)
 - [OSDI 2012] [Be Conservative: Enhancing Failure Diagnosis with Proactive Logging](https://www.eecg.utoronto.ca/~yuan/papers/osdi12-errlog.pdf)
-- [ICSE 2012] [Characterizing logging practices in open-source software](http://petertsehsun.github.io/soen691/current/papers/log_icse12.pdf)
+- [TSE 2013] [Event Logs for the Analysis of Software Failures: A Rule-Based Approach](http://ieeexplore.ieee.org/document/6320555/)
+- [ICSE 2015] [Learning to Log: Helping Developers Make Informed Logging Decisions](http://ieeexplore.ieee.org/document/7194593/)
+- [ICSE 2015] [Where do developers log? an empirical study on logging practices in industry]http://dl.acm.org/citation.cfm?doid=2591062.2591175()
+- [ATC 2015] [Log2 : A Cost-Aware Logging Mechanism for Performance Diagnosis](https://www.usenix.org/system/files/conference/atc15/atc15-paper-ding.pdf)
+- [SOSP 2017] [Log20: Fully Automated Optimal Placement of Log Printing Statements under Specified Overhead Threshold](http://log20.dsrg.utoronto.ca/log20_sosp17_paper.pdf)
+- [HotOS 2017] [The Game of Twenty Questions: Do You Know Where to Log?](https://dl.acm.org/doi/10.1145/3102980.3103001)
+- [ASE 2020] [Where Shall We Log? Studying and Suggesting Logging Locations in Code Blocks](https://users.encs.concordia.ca/~shang/pubs/Zhenhao_ASE20.pdf)
+
+### What to log
+
 - [ASPLOS 2011] [Improving Software Diagnosability via Log Enhancement](http://opera.ucsd.edu/paper/asplos11-logenhancer.pdf)
+- [ASE 2018] [Characterizing the Natural Language Descriptions in Software Logging Statements](https://pinjiahe.github.io/papers/ASE18.pdf)
+- [TSE 2019] [Which Variables Should I Log?](https://xin-xia.github.io/publication/tse197.pdf)
+- [ICPC 2019] [PADLA: a dynamic log level adapter using online phase detection](https://sel.ist.osaka-u.ac.jp/lab-db/betuzuri/archive/1157/1157.pdf)
 
-### By statistical methods
+### How to log
 
-- [TSE19liu] [Which Variables Should I Log?](https://xin-xia.github.io/publication/tse197.pdf)
-- [ASE18He] [Characterizing the Natural Language Descriptions in Software Logging Statements](https://pinjiahe.github.io/papers/ASE18.pdf)
-- [ATC15Ding] [Log2 : A Cost-Aware Logging Mechanism for Performance Diagnosis](https://www.usenix.org/system/files/conference/atc15/atc15-paper-ding.pdf)
+- [ECOOP 1997] [Aspect-oriented programming](https://www.cs.ubc.ca/~gregor/papers/kiczales-ECOOP1997-AOP.pdf)
+- [DSN 2010] [Assessing and improving the effectiveness of logs for the analysis of software faults](http://ieeexplore.ieee.org/document/5544279/)
+- [ICSE 2012] [Characterizing logging practices in open-source software](http://petertsehsun.github.io/soen691/current/papers/log_icse12.pdf)
+- [ICSME 2014] [Understanding Log Lines Using Development Knowledge](http://ieeexplore.ieee.org/document/6976068/)
+- [ICSE 2015] [Industry practices and event logging: assessment of a critical software development process](https://dl.acm.org/doi/10.5555/2819009.2819035)
+- [ESE 2015] [Studying the relationship between logging characteristics and the code quality of platform software](http://link.springer.com/10.1007/s10664-013-9274-8)
+- [ICSE 2017] [Characterizing and Detecting Anti-patterns in the Logging Code](https://dl.acm.org/doi/pdf/10.1109/ICSE.2017.15)
+- [OSDI 2018] [The FuzzyLog: A Partially Ordered Shared Log](https://www.usenix.org/conference/osdi18/presentation/lockerman)
+- [ATC 2018] [Troubleshooting Transiently-Recurring Errors in Production Systems with Blame-Proportional Logging](https://www.usenix.org/system/files/conference/atc18/atc18-luo.pdf)
+- [ATC 2018] [NanoLog: A Nanosecond Scale Logging System](https://www.usenix.org/system/files/conference/atc18/atc18-yang.pdf)
+- [NSDI 2018] [Carousel: Scalable Logging for Intrusion Prevention Systems](https://www.usenix.org/conference/nsdi10-0/carousel-scalable-logging-intrusion-prevention-systems)
+- [ICSE 2019] [DLFinder: Characterizing and Detecting Duplicate Logging Code Smells](https://users.encs.concordia.ca/~shang/pubs/icse2019_zhenhao.pdf)
+- [ICSE 2016] [The bones of the system: a case study of logging and telemetry at Microsoft](http://dl.acm.org/citation.cfm?doid=2889160.2889231)
+- [MSR 2016] [Logging library migrations: a case study for the apache software foundation projects](http://dl.acm.org/citation.cfm?doid=2901739.2901769)
+- [ESE 2017] [Characterizing logging practices in Java-based open source software projects - a replication study in Apache Software Foundation](http://link.springer.com/10.1007/s10664-016-9429-5)
+- [ESE 2018] [Studying and detecting log-related issues](http://link.springer.com/10.1007/s10664-018-9603-z)
+- [ESE 2018] [Examining the stability of logging statements](http://link.springer.com/10.1007/s10664-017-9518-0)
+- [ESE 2018] [An exploratory study on assessing the energy impact of logging on Android applications](https://www.eecs.yorku.ca/~zmjiang/publications/emse2017_chowdhury.pdf)
+- [ESE 2019] [Studying the characteristics of logging practices in mobile apps: a case study on F-Droid](http://link.springer.com/10.1007/s10664-019-09687-9)
+- [ICSE 2020] [Studying the Use of Java Logging Utilities in the Wild](http://www.cse.yorku.ca/~zmjiang/publications/icse2020_chen.pdf)
 
-### Empirical Study
-
-- [ICSE15Pecchia] [Industry practices and event logging: assessment of a critical software development process](https://dl.acm.org/doi/10.5555/2819009.2819035)
-- [ICSE12Shang] [Bridging the Divide between Software Developers and Operators using Logs](https://users.encs.concordia.ca/~shang/pubs/icse2012_Shang.pdf)
-
-### Pending Classification
-
-- [OSDI18Lockerman] [The FuzzyLog: A Partially Ordered Shared Log](https://www.usenix.org/conference/osdi18/presentation/lockerman)
-- [ICSME19Zhi] [An Exploratory Study of Logging Configuration Practice in Java](http://taoxie.cs.illinois.edu/publications/icsme19-log.pdf)
-- [SOSP13] [Tango: distributed data structures over a shared log](https://dl.acm.org/doi/10.1145/2517349.2522732)
-- [ICSDCS18] [SLoG: Large-Scale Logging Middleware for HPC and Big Data Convergence](https://ieeexplore.ieee.org/document/8416419)
-- [ICDCS10] [Visual, Log-Based Causal Tracing for Performance Debugging of MapReduce Systems](https://ieeexplore.ieee.org/document/5541622)
-- [ICSE20] [Studying the Use of Java Logging Utilities in the Wild](https://www.eecs.yorku.ca/~chenfsd/resources/icse2020_chen.pdf)
 
 ## Log Compression
 
