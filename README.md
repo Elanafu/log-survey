@@ -204,44 +204,40 @@ logzip
 
 ### Anomaly Detection
 
-#### Supervised Approaches
+- [OSDI 2016] [Non-intrusive performance profiling for entire software stacks based on the flow reconstruction principle](https://www.usenix.org/system/files/conference/osdi16/osdi16-zhao.pdf)
+- [FSE 2018] [Using finite-state models for log differencing](https://www.cs.tau.ac.il/~maozs/papers/log-diff-fse18.pdf)
+- [ICSE 2016] [Behavioral log analysis with statistical guarantees](https://www.cs.tau.ac.il/~maozs/papers/sg-icse16.pdf#:~:text=Behavioral%20Log%20Analysis%20with%20Statistical%20Guarantees%20Nimrod%20Busany,temporal%20properties%20from%20logs%20generated%20by%20run-ning%20systems.)
+- [FSE 2011] [Leveraging existing instrumentation to automatically infer invariant-constrained models](https://www.cs.ubc.ca/~bestchai/papers/esecfse2011-final.pdf)
+- [KDD 2010] [Mining program workflow from interleaved traces](https://dl.acm.org/doi/10.1145/1835804.1835883)
+- [ICSE 2014] [Inferring models of concurrent systems from logs of their behavior with CSight](https://dl.acm.org/doi/10.1145/2568225.2568246)
+- [ASE 2019] [Statistical log differencing](http://www.mysmu.edu/faculty/davidlo/papers/ase19-sld.pdf)
+- [SOSP 2009] [Detecting Large-Scale System Problems by Mining Console Logs](https://www2.eecs.berkeley.edu/Pubs/TechRpts/2009/EECS-2009-103.pdf)
+- [IPOM 2003] [A data clustering algorithm for mining patterns from event logs](https://ristov.github.io/publications/slct-ipom03-web.pdf)
+- [FSE 2018] [Identifying impactful service system problems via log analysis](https://shilinhe.github.io/media/papers/fse18.pdf)
+- [ICSE 2016] [Log clustering based problem identification for online service systems](https://dl.acm.org/doi/pdf/10.1145/2889160.2889232)
+- [ICDM 2007] [Failure prediction in ibm bluegene/l event logs](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=4470294)
+- [IEICE Transactions on Communications 2018] [Proactive failure detection learning generation patterns of large-scale network logs](https://dl.acm.org/doi/10.1109/CNSM.2015.7367332)
+- [ISSRE 2015] [Experience report: Anomaly detection of cloud application operations using log and cloud metric correlation analysis](https://ieeexplore.ieee.org/document/7381796)
+- [USENIX ATC 2010] [Mining Invariants from Console Logs for System Problem Detection](https://dl.acm.org/doi/10.5555/1855840.1855864)
+- [ICSE 2013] [Assisting developers of big data analytics applications when deploying on hadoop clouds](http://www.cse.yorku.ca/~zmjiang/publications/ICSE2013_Shang.pdf)
+- [ICDM 2009] [Online system problem detection by mining patterns of console logs](https://people.eecs.berkeley.edu/~jordan/papers/xu-etal-icdm09.pdf)
+- [ISSRE 2017] [Experience report: Log-based behavioral differencing](https://ieeexplore.ieee.org/document/8109094)
+- [KDD 2016] [Anomaly detection using program control flow graph mining from execution logs](https://www.kdd.org/kdd2016/papers/files/adf1233-nandiA.pdf)
+- [ICDM 2009] [Execution Anomaly Detection in Distributed Systems through Unstructured Log Analysis](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/DM790-CR.pdf)
+- [ASPLOS 2016] [Cloudseer: Workflow monitoring of cloud infrastructures via interleaved logs](https://people.engr.ncsu.edu/gjin2/asplos-2016-cloudseer.pdf)
+- [KDD 2005] [Dynamic syslog mining for network failure monitoring](https://dl.acm.org/doi/10.1145/1081870.1081927)
+- [ISSRE 2016] [Experience report: System log analysis for anomaly detection](https://ieeexplore.ieee.org/document/7774521/)
+- [CCS 2017] [Deeplog: Anomaly detection and diagnosis from system logs through deep learning](https://www.cs.utah.edu/~lifeifei/papers/deeplog.pdf)
+- [FSE 2019] [Robust log-based anomaly detection on unstable log data](https://dl.acm.org/doi/pdf/10.1145/3338906.3338931)
+- [IJCAI 2019] [LogAnomaly: Unsupervised Detection of Sequential and Quantitative Anomalies in Unstructured Logs](https://www.ijcai.org/Proceedings/2019/0658.pdf)
+- [ICCCN 2020] [Semantic-aware Representation Framework for Online Log Analysis](http://nkcs.iops.ai/wp-content/uploads/2020/05/paper-ICCCN20-Log2Vec.pdf)
+- [TCCN 2020] [An Intelligent Anomaly Detection Scheme for Micro-services Architectures with Temporal and Spatial Data Analysis](https://ieeexplore.ieee.org/document/8957683)
+- [ISSRE 2020] [Cross-System Log Anomaly Detection for Software Systems (to appear)]
+- [Information Systems Frontiers 2020] [LogGAN: a Log-level Generative Adversarial Network for Anomaly Detection using Permutation Event Modeling](https://link.springer.com/article/10.1007/s10796-020-10026-3)
+- [DASC/PiCom/DataCom/CyberSciTech 2018] [Detecting anomaly in big data system logs using convolutional neural network](https://ieeexplore.ieee.org/document/8511880)
+- [CCS 2019] [Log2vec: A Heterogeneous Graph Embedding Based Approach for Detecting Cyber Threats within Enterprise](https://dl.acm.org/doi/10.1145/3319535.3363224)
+- [MLCS 2018] [Recurrent Neural Network Attention Mechanisms for Interpretable System Log Anomaly Detection](https://dl.acm.org/doi/pdf/10.1145/3217871.3217872)
 
-* Neural network-based
-  - [CCS17] [DeepLog: Anomaly Detection and Diagnosis from System Logs through Deep Learning](https://www.cs.utah.edu/~lifeifei/papers/deeplog.pdf)
-  - [IJCAI19] [LogAnomaly: Unsupervised Detection of Sequential and Quantitative Anomalies in Unstructured Logs](https://www.ijcai.org/Proceedings/2019/0658.pdf)
-  - [MLCS18] [Recurrent Neural Network Attention Mechanisms for Interpretable System Log Anomaly Detection](https://dl.acm.org/doi/pdf/10.1145/3217871.3217872)
-  - [FSE19] [Robust Log-Based Anomaly Detection on Unstable Log Data](https://dl.acm.org/doi/pdf/10.1145/3338906.3338931)
-
-- Graph Mining
-  - [KDD16] [Anomaly Detection Using Program Control Flow Graph Mining from Execution Logs](https://www.kdd.org/kdd2016/papers/files/adf1233-nandiA.pdf)
-
-- Traditional machine learning-based
-  - [IEEE/IFIP11] [Mining Unstructured Log Files for Recurrent Fault Diagnosis](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=5990536)
-  - [ICAC04] [Failure Diagnosis Using Decision Trees](https://people.eecs.berkeley.edu/~brewer/papers/icac2004_chen_diagnosis.pdf)
-  - [JSS18] [Execution anomaly detection in large-scale systems through console log analysis](https://freepaper.me/downloads/abstract/10.1016/j.jss.2018.05.016)
-  - [ICDM07] [Failure prediction in ibm bluegene/l event logs](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=4470294)
-  - [EuroSys10] [Fingerprinting the datacenter: automated classification of performance crises](https://people.orie.cornell.edu/woodard/eurosys2010-paper97.pdf)
-
-#### Semi-supervised Approaches
-
-- PU Learning
-
-  - [IWQOS18] [Device-Agnostic Log Anomaly Classification with Partial Labels](https://ieeexplore.ieee.org/abstract/document/8624141)
-
-#### Unsupervised Approaches
-  - Clustering
-    - [ICSE16] [Log Clustering based Problem Identification for Online Service Systems](https://dl.acm.org/doi/pdf/10.1145/2889160.2889232)
-    - [FSE18] [Identifying Impactful Service System Problems via Log Analysis](https://shilinhe.github.io/media/papers/fse18.pdf)
-    - [SAC12] [Spatio-temporal decomposition, clustering and identification for alert detection in system logs](https://dl.acm.org/doi/pdf/10.1145/2245276.2245395)
-  - Statistics-based Detection
-    - [ICDM09] [Execution Anomaly Detection in Distributed Systems through Unstructured Log Analysis](https://netman.aiops.org/~peidan/ANM2018Fall/6.LogAnomalyDetection/ReadingList/Execution%20anomaly%20detection%20in%20distributed%20systems%20through%20unstructured%20log%20analysis.pdf)
-    - [KDD05] [Dynamic Syslog Mining for Network Failure Monitoring](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.96.8083&rep=rep1&type=pdf)
-    - [ICDM08] [Alert Detection in System Logs](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=4781208)
-
-- Autoencoder
-  - [DM19] [Anomaly Detection From Log Files Using Unsupervised Deep Learning](https://homes.di.unimi.it/cuculo/papers/bursic2019anomaly.pdf)
-- PCA
-  - [ICML10] [Detecting Large-Scale System Problems by Mining Console Logs](https://people.eecs.berkeley.edu/~jordan/papers/xu-etal-icml10.pdf)
 
 ### Failure Prediction
 
