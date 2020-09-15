@@ -25,7 +25,7 @@ Table of Contents
   - [Log Parsing](#log-parsing)
     - [Offline](#offline)
     - [Online](#online)
-    - [Benchmark and Tools](#benchmark-and-tools)
+    - [Benchmarks and Tools](#benchmarks-and-tools)
   - [Log Mining](#log-mining)
     - [*Pending*](#pending)
     - [Anomaly Detection](#anomaly-detection)
@@ -187,7 +187,7 @@ logzip
 - [arXiv'18] [A Directed Acyclic Graph Approach to Online Log Parsing](https://arxiv.org/abs/1806.04356)
 - [TSE'20] [Logram: Efficient Log Parsing Using n-Gram Dictionaries](https://arxiv.org/abs/2001.03038)
 
-### Benchmark and Tools
+### Benchmarks and Tools
 - [ICSE-SEIP'19] [Tools and benchmarks for automated log parsing](https://arxiv.org/abs/1811.03509)
 
 
