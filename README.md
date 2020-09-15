@@ -24,6 +24,7 @@ Table of Contents
   - [Log Parsing](#log-parsing)
     - [Offline](#offline)
     - [Online](#online)
+    - [Benchmarks and Tools](#benchmarks-and-tools)
   - [Log Mining](#log-mining)
     - [*Pending*](#pending)
     - [Anomaly Detection](#anomaly-detection)
@@ -89,35 +90,47 @@ Loghub
 
 ## Logging
 
-### By static analysis
+### Where to log
 
-- [MSR 2019] [Tracing Back Log Data to its Log Statement: From Research to Practice](https://pure.tudelft.nl/portal/files/52060635/paper.pdf)
-- [ICSE 2019] [DLFinder: Characterizing and Detecting Duplicate Logging Code Smells](https://users.encs.concordia.ca/~shang/pubs/icse2019_zhenhao.pdf)
-- [SOSP 2017] [Log20: Fully Automated Optimal Placement of Log Printing Statements under Specified Overhead Threshold](http://log20.dsrg.utoronto.ca/log20_sosp17_paper.pdf)
-- [ICSE 2017] [Characterizing and Detecting Anti-patterns in the Logging Code](https://dl.acm.org/doi/pdf/10.1109/ICSE.2017.15)
 - [OSDI 2012] [Be Conservative: Enhancing Failure Diagnosis with Proactive Logging](https://www.eecg.utoronto.ca/~yuan/papers/osdi12-errlog.pdf)
-- [ICSE 2012] [Characterizing logging practices in open-source software](http://petertsehsun.github.io/soen691/current/papers/log_icse12.pdf)
+- [TSE 2013] [Event Logs for the Analysis of Software Failures: A Rule-Based Approach](http://ieeexplore.ieee.org/document/6320555/)
+- [ICSE 2015] [Learning to Log: Helping Developers Make Informed Logging Decisions](http://ieeexplore.ieee.org/document/7194593/)
+- [ICSE 2015] [Where do developers log? an empirical study on logging practices in industry]http://dl.acm.org/citation.cfm?doid=2591062.2591175()
+- [ATC 2015] [Log2 : A Cost-Aware Logging Mechanism for Performance Diagnosis](https://www.usenix.org/system/files/conference/atc15/atc15-paper-ding.pdf)
+- [SOSP 2017] [Log20: Fully Automated Optimal Placement of Log Printing Statements under Specified Overhead Threshold](http://log20.dsrg.utoronto.ca/log20_sosp17_paper.pdf)
+- [HotOS 2017] [The Game of Twenty Questions: Do You Know Where to Log?](https://dl.acm.org/doi/10.1145/3102980.3103001)
+- [ASE 2020] [Where Shall We Log? Studying and Suggesting Logging Locations in Code Blocks](https://users.encs.concordia.ca/~shang/pubs/Zhenhao_ASE20.pdf)
+
+### What to log
+
 - [ASPLOS 2011] [Improving Software Diagnosability via Log Enhancement](http://opera.ucsd.edu/paper/asplos11-logenhancer.pdf)
+- [ASE 2018] [Characterizing the Natural Language Descriptions in Software Logging Statements](https://pinjiahe.github.io/papers/ASE18.pdf)
+- [TSE 2019] [Which Variables Should I Log?](https://xin-xia.github.io/publication/tse197.pdf)
+- [ICPC 2019] [PADLA: a dynamic log level adapter using online phase detection](https://sel.ist.osaka-u.ac.jp/lab-db/betuzuri/archive/1157/1157.pdf)
 
-### By statistical methods
+### How to log
 
-- [TSE19liu] [Which Variables Should I Log?](https://xin-xia.github.io/publication/tse197.pdf)
-- [ASE18He] [Characterizing the Natural Language Descriptions in Software Logging Statements](https://pinjiahe.github.io/papers/ASE18.pdf)
-- [ATC15Ding] [Log2 : A Cost-Aware Logging Mechanism for Performance Diagnosis](https://www.usenix.org/system/files/conference/atc15/atc15-paper-ding.pdf)
+- [ECOOP 1997] [Aspect-oriented programming](https://www.cs.ubc.ca/~gregor/papers/kiczales-ECOOP1997-AOP.pdf)
+- [DSN 2010] [Assessing and improving the effectiveness of logs for the analysis of software faults](http://ieeexplore.ieee.org/document/5544279/)
+- [ICSE 2012] [Characterizing logging practices in open-source software](http://petertsehsun.github.io/soen691/current/papers/log_icse12.pdf)
+- [ICSME 2014] [Understanding Log Lines Using Development Knowledge](http://ieeexplore.ieee.org/document/6976068/)
+- [ICSE 2015] [Industry practices and event logging: assessment of a critical software development process](https://dl.acm.org/doi/10.5555/2819009.2819035)
+- [ESE 2015] [Studying the relationship between logging characteristics and the code quality of platform software](http://link.springer.com/10.1007/s10664-013-9274-8)
+- [ICSE 2017] [Characterizing and Detecting Anti-patterns in the Logging Code](https://dl.acm.org/doi/pdf/10.1109/ICSE.2017.15)
+- [OSDI 2018] [The FuzzyLog: A Partially Ordered Shared Log](https://www.usenix.org/conference/osdi18/presentation/lockerman)
+- [ATC 2018] [Troubleshooting Transiently-Recurring Errors in Production Systems with Blame-Proportional Logging](https://www.usenix.org/system/files/conference/atc18/atc18-luo.pdf)
+- [ATC 2018] [NanoLog: A Nanosecond Scale Logging System](https://www.usenix.org/system/files/conference/atc18/atc18-yang.pdf)
+- [NSDI 2018] [Carousel: Scalable Logging for Intrusion Prevention Systems](https://www.usenix.org/conference/nsdi10-0/carousel-scalable-logging-intrusion-prevention-systems)
+- [ICSE 2019] [DLFinder: Characterizing and Detecting Duplicate Logging Code Smells](https://users.encs.concordia.ca/~shang/pubs/icse2019_zhenhao.pdf)
+- [ICSE 2016] [The bones of the system: a case study of logging and telemetry at Microsoft](http://dl.acm.org/citation.cfm?doid=2889160.2889231)
+- [MSR 2016] [Logging library migrations: a case study for the apache software foundation projects](http://dl.acm.org/citation.cfm?doid=2901739.2901769)
+- [ESE 2017] [Characterizing logging practices in Java-based open source software projects - a replication study in Apache Software Foundation](http://link.springer.com/10.1007/s10664-016-9429-5)
+- [ESE 2018] [Studying and detecting log-related issues](http://link.springer.com/10.1007/s10664-018-9603-z)
+- [ESE 2018] [Examining the stability of logging statements](http://link.springer.com/10.1007/s10664-017-9518-0)
+- [ESE 2018] [An exploratory study on assessing the energy impact of logging on Android applications](https://www.eecs.yorku.ca/~zmjiang/publications/emse2017_chowdhury.pdf)
+- [ESE 2019] [Studying the characteristics of logging practices in mobile apps: a case study on F-Droid](http://link.springer.com/10.1007/s10664-019-09687-9)
+- [ICSE 2020] [Studying the Use of Java Logging Utilities in the Wild](http://www.cse.yorku.ca/~zmjiang/publications/icse2020_chen.pdf)
 
-### Empirical Study
-
-- [ICSE15Pecchia] [Industry practices and event logging: assessment of a critical software development process](https://dl.acm.org/doi/10.5555/2819009.2819035)
-- [ICSE12Shang] [Bridging the Divide between Software Developers and Operators using Logs](https://users.encs.concordia.ca/~shang/pubs/icse2012_Shang.pdf)
-
-### Pending Classification
-
-- [OSDI18Lockerman] [The FuzzyLog: A Partially Ordered Shared Log](https://www.usenix.org/conference/osdi18/presentation/lockerman)
-- [ICSME19Zhi] [An Exploratory Study of Logging Configuration Practice in Java](http://taoxie.cs.illinois.edu/publications/icsme19-log.pdf)
-- [SOSP13] [Tango: distributed data structures over a shared log](https://dl.acm.org/doi/10.1145/2517349.2522732)
-- [ICSDCS18] [SLoG: Large-Scale Logging Middleware for HPC and Big Data Convergence](https://ieeexplore.ieee.org/document/8416419)
-- [ICDCS10] [Visual, Log-Based Causal Tracing for Performance Debugging of MapReduce Systems](https://ieeexplore.ieee.org/document/5541622)
-- [ICSE20] [Studying the Use of Java Logging Utilities in the Wild](https://www.eecs.yorku.ca/~chenfsd/resources/icse2020_chen.pdf)
 
 ## Log Compression
 
@@ -153,6 +166,7 @@ Loghub
 - [MSR'10] [Abstracting Log Lines to Log Event Types for Mining Software System Logs](http://www.se.rit.edu/~mei/publications/pdfs/Abstracting-Log-Lines-to-Log-Event-Types-for-Mining-Software-System-Logs.pdf)
 - [CIKM'11] [LogSig: Generating System Events from Raw Textual Logs](https://users.cs.fiu.edu/~taoli/pub/liang-cikm2011.pdf) 
 - [KDD'09] [Clustering Event Logs Using Iterative Partitioning](https://web.cs.dal.ca/~makanju/publications/paper/kdd09.pdf)
+- [TKDE'12] [A Lightweight Algorithm for Message Type Extraction in System Application Logs](https://ieeexplore.ieee.org/document/5936060)
 - [CNSM'15] [LogCluster - A Data Clustering and Pattern Mining Algorithm for Event Logs](http://dl.ifip.org/db/conf/cnsm/cnsm2015/1570161213.pdf)
 - [CIKM'16] [LogMine: Fast Pattern Recognition for Log Analytics](http://www.cs.unm.edu/~mueen/Papers/LogMine.pdf)
 - [TDSC'18] [Towards Automated Log Parsing for Large-Scale Log Data Analysis](https://pinjiahe.github.io/papers/TDSC17.pdf)
@@ -160,11 +174,15 @@ Loghub
 
 ### Online
 - [SCC'13] [Incremental Mining of System Log Format](http://ieeexplore.ieee.org/document/6649746/)
-- [CNSM'15] [Length Matters: Clustering System Log Messages using Length of Words](https://arxiv.org/pdf/1611.03213.pdf)
-- [ICDM'16] [Spell: Streaming Parsing of System Event Logs](https://www.cs.utah.edu/~lifeifei/papers/spell.pdf)
+- [arXiv'15] [Length Matters: Clustering System Log Messages using Length of Words](https://arxiv.org/pdf/1611.03213.pdf)
+- [TKDE'18] [Spell: Online Streaming Parsing of Large Unstructured System Logs](https://ieeexplore.ieee.org/document/8489912)
 - [ICWS'17] [Drain: An Online Log Parsing Approach with Fixed Depth Tree](https://jiemingzhu.github.io/pub/pjhe_icws2017.pdf)
 - [arXiv'18] [A Directed Acyclic Graph Approach to Online Log Parsing](https://arxiv.org/abs/1806.04356)
 - [TSE'20] [Logram: Efficient Log Parsing Using n-Gram Dictionaries](https://arxiv.org/abs/2001.03038)
+
+### Benchmarks and Tools
+- [ICSE-SEIP'19] [Tools and benchmarks for automated log parsing](https://arxiv.org/abs/1811.03509)
+
 
 
 ## Log Mining
@@ -218,8 +236,17 @@ Loghub
 - PCA
   - [ICML10] [Detecting Large-Scale System Problems by Mining Console Logs](https://people.eecs.berkeley.edu/~jordan/papers/xu-etal-icml10.pdf)
 
-
 ### Failure Prediction
+
+- [MACS18] [PreFix: Switch failure prediction in datacenter networks](https://doi.org/10.1145/3179405)
+- [HPDC18] [Desh: deep learning for system health prediction of lead times to failure in HPC](https://doi.org/10.1145/3208040.3208051)
+- [KDD03] [Critical event prediction for proactive management in large-scale computer clusters](https://doi.org/10.1145/956750.956799)
+- [IPDPS20] [Aarohi: Making real-time node failure prediction feasible](https://doi.org/10.1109/IPDPS47924.2020.00115)
+- [CLUSTER17] [Data Mining-Based Analysis of HPC Center Operations](https://doi.org/10.1109/CLUSTER.2017.23)
+- [CLUSTER14] [Exploring void search for fault detection on extreme scale systems](https://doi.org/10.1109/CLUSTER.2014.6968757)
+- [WWW19] [Outage Prediction and Diagnosis for Cloud Service Systems](http://dl.acm.org/citation.cfm?doid=3308558.3313501)
+- [FSE18] [Predicting Node failure in cloud service systems](http://dl.acm.org/citation.cfm?doid=3236024.3236060)
+- [FSE19] [Latent error prediction and fault localization for microservice applications by learning from system trace logs](http://dl.acm.org/citation.cfm?doid=3338906.3338961)
 
 ### Failure Diagnosis
 - XX 
@@ -227,7 +254,12 @@ Loghub
 
 ### Others
 
-
+- [DSN14] [Mining Historical Issue Repositories to Heal Large-Scale Online Service Systems](https://doi.org/10.1109/DSN.2014.39)
+- [ASE98] [Testing using log file analysis: Tools, methods, and issues](https://doi.org/10.1109/ASE.1998.732614)
+- [ASE18] [An automated approach to estimating code coverage measures via execution logs](https://doi.org/10.1145/3238147.3238214)
+- [ASE19] [An experience report of generating load tests using log-recovered workloads at varying granularities of user behaviour](https://doi.org/10.1109/ASE.2019.00068)
+- [ASE15] [Have we seen enough traces? (T)](https://doi.org/10.1109/ASE.2015.62)
+- [ICSE08] [An approach to detecting duplicate bug reports using natural language and execution information](https://doi.org/10.1145/1368088.1368151)
 
 
 ## Credits
