@@ -1,32 +1,42 @@
-# log-survey
-Log survey paper list
+<p align="center"> <a href="https://github.com/logpai"> <img src="https://github.com/logpai/logpai.github.io/blob/master/img/logpai_logo.jpg" width="425"></a></p>
+
+# Awesome Log Analysis Research
+A curated list of awesome publications on log analysis.
 
 
+Table of Contents
 
-[TOC]
-
-
-
-## Contents
+- [Awesome Log Analysis Research](#awesome-log-analysis-research)
   - [Conferences and Journals](#conferences-and-journals)
   - [Competitions](#competitions)
   - [Datasets](#datasets)
   - [Research Groups](#research-groups)
   - [Logging](#logging)
-    - [Category 1](#category-1)
-    - [Category 2](#category-2)
+    - [By static analysis](#by-static-analysis)
+    - [By statistical methods](#by-statistical-methods)
+    - [Empirical Study](#empirical-study)
+    - [Pending Classification](#pending-classification)
+  - [Log Compression](#log-compression)
+    - [Delta encoding](#delta-encoding)
+    - [Bucketing](#bucketing)
+    - [Text replacement](#text-replacement)
+    - [Log transposition](#log-transposition)
+    - [Others](#others)
   - [Log Parsing](#log-parsing)
     - [Offline](#offline)
     - [Online](#online)
   - [Log Mining](#log-mining)
-    - [Log Anomaly Detection](#log-anomaly-detection)
+    - [*Pending*](#pending)
+    - [Anomaly Detection](#anomaly-detection)
       - [Supervised Approaches](#supervised-approaches)
       - [Semi-supervised Approaches](#semi-supervised-approaches)
       - [Unsupervised Approaches](#unsupervised-approaches)
-    - [Problems Identification](#problems-identification)
-    - [Root cause identification](#root-cause-identification)
-  - [Debugging and Diagnosis](#debugging-and-diagnosis)
-  - [Log File Storage](#log-file-storage)
+    - [Failure Prediction](#failure-prediction)
+    - [Failure Diagnosis](#failure-diagnosis)
+    - [Others](#others-1)
+  - [Credits](#credits)
+  - [Contributions](#contributions)
+  - [License](#license)
 
 ## Conferences and Journals
 Logs are a type of valuable data generated from many sources such as software, systems, networks, devices, etc. They have also been used for a number of tasks related to reliability, security, performance, and energy. Therefore, the research of log analysis has attracted interests from different research areas.
@@ -77,32 +87,31 @@ Loghub
 | **Australia** |||||
 | [Ingo Weber](https://people.csiro.au/W/I/Ingo-Weber), CSIRO |||||
 
-## Papers
 
-### Logging
+## Logging
 
-#### By static analysis
+### By static analysis
 
-- [MSR'19] [Tracing Back Log Data to its Log Statement: From Research to Practice](https://pure.tudelft.nl/portal/files/52060635/paper.pdf)
-- [ICSE19Li] [DLFinder: Characterizing and Detecting Duplicate Logging Code Smells](https://users.encs.concordia.ca/~shang/pubs/icse2019_zhenhao.pdf)
-- [SOSP17Zhao] [Log20: Fully Automated Optimal Placement of Log Printing Statements under Specified Overhead Threshold](http://log20.dsrg.utoronto.ca/log20_sosp17_paper.pdf)
-- [ICSE17chen] [Characterizing and Detecting Anti-patterns in the Logging Code](https://dl.acm.org/doi/pdf/10.1109/ICSE.2017.15)
-- [OSDI12Yuan] [Be Conservative: Enhancing Failure Diagnosis with Proactive Logging](https://www.eecg.utoronto.ca/~yuan/papers/osdi12-errlog.pdf)
-- [ICSE12Yuan] [Characterizing logging practices in open-source software](http://petertsehsun.github.io/soen691/current/papers/log_icse12.pdf)
-- [ASPLOS11Yuan] [Improving Software Diagnosability via Log Enhancement](http://opera.ucsd.edu/paper/asplos11-logenhancer.pdf)
+- [MSR 2019] [Tracing Back Log Data to its Log Statement: From Research to Practice](https://pure.tudelft.nl/portal/files/52060635/paper.pdf)
+- [ICSE 2019] [DLFinder: Characterizing and Detecting Duplicate Logging Code Smells](https://users.encs.concordia.ca/~shang/pubs/icse2019_zhenhao.pdf)
+- [SOSP 2017] [Log20: Fully Automated Optimal Placement of Log Printing Statements under Specified Overhead Threshold](http://log20.dsrg.utoronto.ca/log20_sosp17_paper.pdf)
+- [ICSE 2017] [Characterizing and Detecting Anti-patterns in the Logging Code](https://dl.acm.org/doi/pdf/10.1109/ICSE.2017.15)
+- [OSDI 2012] [Be Conservative: Enhancing Failure Diagnosis with Proactive Logging](https://www.eecg.utoronto.ca/~yuan/papers/osdi12-errlog.pdf)
+- [ICSE 2012] [Characterizing logging practices in open-source software](http://petertsehsun.github.io/soen691/current/papers/log_icse12.pdf)
+- [ASPLOS 2011] [Improving Software Diagnosability via Log Enhancement](http://opera.ucsd.edu/paper/asplos11-logenhancer.pdf)
 
-#### By statistical methods
+### By statistical methods
 
 - [TSE19liu] [Which Variables Should I Log?](https://xin-xia.github.io/publication/tse197.pdf)
 - [ASE18He] [Characterizing the Natural Language Descriptions in Software Logging Statements](https://pinjiahe.github.io/papers/ASE18.pdf)
 - [ATC15Ding] [Log2 : A Cost-Aware Logging Mechanism for Performance Diagnosis](https://www.usenix.org/system/files/conference/atc15/atc15-paper-ding.pdf)
 
-#### Survey
+### Empirical Study
 
 - [ICSE15Pecchia] [Industry practices and event logging: assessment of a critical software development process](https://dl.acm.org/doi/10.5555/2819009.2819035)
 - [ICSE12Shang] [Bridging the Divide between Software Developers and Operators using Logs](https://users.encs.concordia.ca/~shang/pubs/icse2012_Shang.pdf)
 
-#### Pending Classification
+### Pending Classification
 
 - [OSDI18Lockerman] [The FuzzyLog: A Partially Ordered Shared Log](https://www.usenix.org/conference/osdi18/presentation/lockerman)
 - [ICSME19Zhi] [An Exploratory Study of Logging Configuration Practice in Java](http://taoxie.cs.illinois.edu/publications/icsme19-log.pdf)
@@ -111,25 +120,25 @@ Loghub
 - [ICDCS10] [Visual, Log-Based Causal Tracing for Performance Debugging of MapReduce Systems](https://ieeexplore.ieee.org/document/5541622)
 - [ICSE20] [Studying the Use of Java Logging Utilities in the Wild](https://www.eecs.yorku.ca/~chenfsd/resources/icse2020_chen.pdf)
 
-### Log Compression
+## Log Compression
 
-#### Delta encoding
+### Delta encoding
 - Lossless compression for large scale cluster logs
 - MLC: An Efficient Multi-level Log Compression Method for Cloud Backup Systems
 - Fast and efficient log file compression
 - Felfcnca: Fast & efficient log file com- pression using non linear cellular automata classifier.
 
-#### Bucketing
+### Bucketing
 - Adaptive log compression for massive log data
 - Mlc: An efficient multi-level log compression method for cloud backup systems.
   
-#### Text replacement
+### Text replacement
 - Evaluating text preprocessing to im- prove compression on maillogs.
 - Using semantic knowledge to improve compression on log files. [Thesis]
 - An Industrial Case Study of Customizing Operational Profiles Using Log Compression
 - Rough Logs: A Data Reduction Approach for Log Files
   
-#### Log transposition
+### Log transposition
 - Sub-atomic field processing for improved web log compression
 - Cowic: A column-wise independent compression for log stream analysis
 logzip
@@ -137,7 +146,7 @@ logzip
 - An Industrial Case Study of Customizing Operational Profiles Using Log Compression
 - Comprehensive Log Compression with Frequent Patterns
 
-#### Others
+### Others
 - A Study of the Performance of General Compressors on Log Files
 - Immutable Log Storage as a Service [with blockchain]
 - Anonymization of System Logs for Privacy and Storage Benefits
